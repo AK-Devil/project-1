@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'Roman';
+  src: url('/assets/font/RomanSerif.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chomsky';
+  src: url('/assets/font/Chomsky.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
+
+* {
+  font-family: 'Roman', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.75);
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+}
+
+header > * {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* left Navigation */
+
+.left-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-container > * {
+  margin-left: 15px;
+  font-size: 15px !important;
+}
+
+.search {
+  margin-left: 25px !important;
+  margin-right: 15px;
+}
+
+.space-and-cosmos {
+  font-size: 13px !important;
+  font-family: 'Libre Franklin', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+.links > a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 35px;
+  line-height: 2;
+}
+
+/* middle Navigation */
+
+.middle-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-container > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 0.8125rem;
+}
+
+.middle-container > h3 > a {
+  font-family: 'Chomsky', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+
+/* right Navigation */
+
+.right-container {
+  display: flex;
+  align-items: center;
+  width: 15%;
+}
+
+.button {
+  background-color: rgb(86, 123, 149);
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5%;
+  border: none;
+  font-size: 11px;
+}
+
+header > h1 {
+  margin-top: 100px;
+}
+
+.image-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 975px;
+}
+
+.image-container > img {
+  width: 100%;
+}
+
+.image-container > .image-caption {
+  font-size: 0.9375rem;
+  line-height: 1;
+}
+
+.image-container > .image-author {
+  font-size: 0.75rem;
+}
+
+/* Social Midea Icon */
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.article-author > p {
+  margin-bottom: 24px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.media-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  align-self: flex-start;
+  font-size: 0.8125rem;
+}
+
+.icons {
+  align-self: flex-end;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  min-width: 242px;
+}
+
+.icons > * {
+  cursor: pointer;
+}
+
+.ics-media {
+  font-size: 15px !important;
+  background-color: #eee;
+  border: 10px solid #eee;
+  border-radius: 50%;
+}
+
+.ics-media:hover {
+  border: 10px solid white;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* Main Body */
+
+main,
+.main {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+.section-normal > h2 {
+  font-weight: 700;
+}
+
+/* Card */
+
+.card-images-section {
+  display: flex;
+  flex-direction: column;
+  min-width: 920px;
+  max-width: 975px;
+  margin: 0 auto;
+}
+
+.figure-credit {
+  margin-bottom: 35px;
+  margin-top: 35px;
+  font-size: 0.9rem;
+}
+
+.images-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-card-container > div {
+  flex: 1;
+}
+
+.card-image > p {
+  width: 30%;
+  height: auto;
+}
+
+.comment-section > p,
+.comment-section > p > a {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.images-card-container > div > p {
+  font-size: 0.8125rem;
+}
+
+.card-image {
+  width: 230px;
+  height: 230px;
+}
+
+.video-container {
+  font-size: 1rem;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+/* comment section */
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icons-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.social-media-icons-2 > button {
+  width: 50%;
+}
+
+.social-media-icons-2 > .media-bar {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 70px;
+  min-width: 975px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links :first-child {
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.footer-bar {
+  top: auto;
+  bottom: 0 !important;
+  height: 40px !important;
+}
+
+.footer-bar > .p1 {
+  align-self: center;
+  margin: auto;
+}
+
+.footer-bar > .p2 {
+  align-self: center;
+  margin: auto;
+  margin: auto 10px;
+}
+
+.vertical-line {
+  border: 0.5px solid gray;
+}
